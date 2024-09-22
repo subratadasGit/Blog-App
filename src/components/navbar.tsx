@@ -20,17 +20,17 @@ const Navbar = () => {
             SubratasBlog
           </Link>
         </div>
-        <div className="hidden md:flex space-x-4 text-black dark:text-white items-center">
-          <Link href="/">
+        <div className="hidden md:flex space-x-4 text-black dark:text-white items-center ">
+          <Link href="/" className='hover:scale-105 transform transition duration-300 hover:font-bold'>
             Home
           </Link>
-          <Link href="/about">
+          <Link href="/about" className='hover:scale-105 transform transition duration-300 hover:font-bold'>
             About
           </Link>
-          <Link href="/Blog">
+          <Link href="/Blog" className='hover:scale-105 transform transition duration-300 hover:font-bold'>
             Blog
           </Link>
-          <Link href="/contact">
+          <Link href="/contact" className='hover:scale-105 transform transition duration-300 hover:font-bold'>
             Contact
           </Link>
           <ModeToggle />
@@ -48,7 +48,7 @@ const Navbar = () => {
                 </svg>
               </button>
             </SheetTrigger>
-            <SheetContent>
+            <SheetContent className="custom-backdrop-blur">
               <SheetHeader>
                 <SheetTitle>Menu</SheetTitle>
               </SheetHeader>
@@ -67,7 +67,6 @@ const Navbar = () => {
                 </Link>
                 <Button variant="outline" className="w-full">Login</Button>
                 <Button variant="outline" className="w-full">Signup</Button>
-                <ModeToggle />
               </div>
             </SheetContent>
           </Sheet>
